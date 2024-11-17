@@ -1,6 +1,6 @@
 ---
 # You can also start simply with 'default'
-theme: excali-slide
+theme: ./theme
 layout: intro
 title: Welcome to Slidev
 info: |
