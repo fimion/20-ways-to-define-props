@@ -31,8 +31,9 @@
     "highlighter": "all",
     "defaults": {
       "fonts": {
-        "sans": "Virgil",
-        "mono": "Fira Code"
+        "sans": "ShantellSans",
+        "serif": "Comic Neue",
+        "mono": "ComicShannsMono"
       }
     }
   },

@@ -1,7 +1,15 @@
+@import url("/fonts/comic-neue/font.css");
+
 @font-face {
-	font-family: 'Virgil';
-	src: local("Virgil"),
-    url("/fonts/Virgil.woff2") format("woff");
+	font-family: 'ShantellSans';
+	src: local("ShantellSans"),
+    url("/fonts/ShantellSans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'ComicShannsMono';
+  src: local("Comic Shanns Mono"),
+  url("/fonts/ComicShannsMono-Regular.ttf");
 }
 
 :root {
@@ -25,7 +33,7 @@
   @apply h-full grid;
 
   h1 {
-    @apply text-6xl leading-20;
+    @apply text-5xl leading-15;
   }
 
   h1 + p {
@@ -39,12 +47,24 @@
   }
 }
 
+.slidev-layout.quote{
+
+  @apply grid place-content-center;
+
+  blockquote, blockquote>p{
+    @apply text-4xl leading-20;
+  }
+  blockquote + p{
+    @apply text-3xl leading-10;
+  }
+}
+
 h1, h2 {
   position:relative;
   display: inline-block;
 }
 
-.dark h1, 
+.dark h1,
 .dark h2 {
   color: #fff !important;
 }
