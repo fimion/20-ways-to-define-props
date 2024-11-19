@@ -736,3 +736,89 @@ layout: intro
 
 </v-click>
 
+---
+layout: cover
+---
+
+## Magic Props
+
+````md magic-move
+
+```vue
+<script setup>
+const propsDef = ref([]);
+</script>
+```
+
+```vue
+<script setup>
+import { useMagicProps } from "./MagicProps.ts";
+const propsDef = ref([]);
+
+const props = useMagicProps(propsDef);
+</script>
+```
+
+
+```vue
+<script setup>
+import { useMagicProps } from "./MagicProps.ts";
+const propsDef = ref([]);
+
+const props = useMagicProps(propsDef);
+
+propsDef.value.push("message");
+</script>
+```
+
+```vue
+<script setup>
+import { useMagicProps, MagicProps } from "./MagicProps.ts";
+const propsDef = ref([]);
+
+const props = useMagicProps(propsDef);
+
+propsDef.value.push("message");
+</script>
+<template>
+<MagicProps>
+    {{props.message}}
+</MagicProps>
+</template>
+```
+
+````
+
+---
+layout: iframe
+url: https://codepen.io/fimion/embed/XWwNjZj?default-tab=result&theme-id=39869
+---
+
+
+---
+layout: intro
+---
+
+## So why would you want to do this?
+
+<div></div>
+
+<v-click>
+
+# You Don't.
+
+</v-click>
+
+---
+layout: intro
+---
+
+
+# Thank You.
+
+
+Alex Riviere  
+Senior Vue Developer at Nexcor Technologies  
+bsky: [@dangitalex.wtf](https://bsky.app/profile/dangitalex.wtf)  
+mastodon: [@fimion@notacult.social](https://notacult.social/@fimion)  
+blog: [Alex.Party](https://alex.party)  
