@@ -21,6 +21,10 @@ lineNumbers: true
 
 # 20 Ways to Define Props in Vue
 
+<div></div>
+
+# From Mundane to Deranged
+
 Alex Riviere  
 Senior Vue Developer at Nexcor Technologies  
 bsky: [@dangitalex.wtf](https://bsky.app/profile/dangitalex.wtf)  
@@ -241,14 +245,15 @@ layout: intro
 
 
 <v-clicks>
+
 <div class="text-5xl">
 
 `<script setup>`
 
 </div>
 
-
 </v-clicks>
+
 ---
 layout: cover
 ---
