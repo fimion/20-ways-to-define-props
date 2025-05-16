@@ -26,7 +26,7 @@ lineNumbers: true
 # From Mundane to Deranged
 
 Alex Riviere  
-Senior Vue Developer at Nexcor Technologies  
+Senior Frontend Developer at Hygiena  
 bsky: [@dangitalex.wtf](https://bsky.app/profile/dangitalex.wtf)  
 mastodon: [@fimion@notacult.social](https://notacult.social/@fimion)  
 blog: [Alex.Party](https://alex.party)  
@@ -694,22 +694,6 @@ export const MyComponent = defineComponent((props)=>{
 ````
 
 ---
-layout: intro
----
-
-<div class="text-center block">
-<h1>Let's Get Unhinged</h1>
-</div>
-
-<div class="text-center block">
-<span class="font-mono text-6xl leading-20" v-click>useMagicProps()</span>
-</div>
-
-<div class="text-center block">
-<span class="text-4xl font-serif" v-click>Please don't use this.</span>
-</div>
-
----
 layout: cover
 ---
 
@@ -727,14 +711,14 @@ layout: cover
 layout: intro
 ---
 
-## Let's make our own Props...
+<div class="text-center block">
+<h1>The Unhinged Hypothetical</h1>
+</div>
 
-<div></div>
-<v-click>
+<div class="text-center block">
+<span class="font-mono text-6xl leading-20" v-click>useMagicProps()</span>
+</div>
 
-# DURING SETUP
-
-</v-click>
 
 ---
 layout: cover
@@ -745,53 +729,112 @@ layout: cover
 ````md magic-move
 
 ```vue
-<script setup>
-const propsDef = ref([]);
+<script>
+
+export default {
+    setup(){
+        const propsDef = ref([]);
+        return { propsDef }
+    }
+}
+
 </script>
 ```
 
 ```vue
-<script setup>
+<script>
 import { useMagicProps } from "./MagicProps.ts";
-const propsDef = ref([]);
-
-const props = useMagicProps(propsDef);
+export default {
+    setup(){
+        const propsDef = ref([]);
+        useMagicProps(propsDef);
+        return { propsDef }
+    }
+}
 </script>
 ```
 
 
 ```vue
-<script setup>
+<script>
 import { useMagicProps } from "./MagicProps.ts";
-const propsDef = ref([]);
-
-const props = useMagicProps(propsDef);
-
-propsDef.value.push("message");
+export default {
+    setup(){
+        const propsDef = ref([]);
+        useMagicProps(propsDef);
+        propsDef.value.push("message");
+        return { propsDef }
+    }
+}
 </script>
 ```
 
 ```vue
-<script setup>
-import { useMagicProps, MagicProps } from "./MagicProps.ts";
-const propsDef = ref([]);
-
-const props = useMagicProps(propsDef);
-
-propsDef.value.push("message");
+<script>
+import { useMagicProps } from "./MagicProps.ts";
+export default {
+    setup(){
+        const propsDef = ref([]);
+        useMagicProps(propsDef);
+        propsDef.value.push("message");
+        return { propsDef }
+    }
+}
 </script>
 <template>
-<MagicProps>
-    {{props.message}}
-</MagicProps>
+    <div>
+    {{$props.message}}
+    </div>
+</template>
+```
+
+```vue
+<script>
+import { useMagicProps } from "./MagicProps.ts";
+export default {
+    setup(){
+        const propsDef = ref([]);
+        useMagicProps(propsDef);
+        propsDef.value.push("message");
+        return { propsDef }
+    }
+}
+</script>
+<template>
+    <div>
+    {{message}}
+    </div>
 </template>
 ```
 
 ````
 
 ---
+layout: intro
+---
+
+
+
+<div class="text-center block">
+<v-switch>
+    <template #0>
+        <h1>The Unhinged Hypothetical</h1>    
+    </template>
+    <template #1>
+        <h1>The Unhinged <del>Hypothetical</del></h1>
+    </template>
+</v-switch>
+</div>
+
+<div class="text-center block">
+<span class="font-mono text-6xl leading-20">useMagicProps()</span>
+</div>
+
+
+
+---
 layout: iframe
-url: https://codepen.io/fimion/embed/XWwNjZj?default-tab=result&theme-id=39869
+url: https://codepen.io/fimion/embed/XWwNjZj?default-tab=js&theme-id=39869
 ---
 
 
@@ -818,7 +861,7 @@ layout: intro
 
 
 Alex Riviere  
-Senior Vue Developer at Nexcor Technologies  
+Senior Frontend Developer at Hygiena  
 bsky: [@dangitalex.wtf](https://bsky.app/profile/dangitalex.wtf)  
 mastodon: [@fimion@notacult.social](https://notacult.social/@fimion)  
 blog: [Alex.Party](https://alex.party)  
