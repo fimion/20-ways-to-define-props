@@ -23,7 +23,7 @@ lineNumbers: true
 
 <div></div>
 
-# From Mundane to Deranged
+# From Mundane to Unhinged
 
 Alex Riviere  
 Senior Frontend Developer at Hygiena  
@@ -111,7 +111,7 @@ export default {
 		},
 		name:{
 			type: String,
-			default: "",
+			default: "Le Poisson Steve",
 		},
 		options: {
 			type: Object,
@@ -132,7 +132,7 @@ export default {
 		},
 		name:{
 			type: String,
-			default: ()=>"",
+			default: ()=>"Le Poisson Steve",
 		},
 		options: {
 			type: Object,
@@ -153,7 +153,7 @@ export default {
 		},
 		name:{
 			type: String,
-			default: ()=>"",
+			default: ()=>"Le Poisson Steve",
 		},
 		options: {
 			type: [Object, null],
@@ -743,7 +743,7 @@ export default {
 
 ```vue
 <script>
-import { useMagicProps } from "./MagicProps.ts";
+import { useMagicProps } from "use-magic-props";
 export default {
     setup(){
         const propsDef = ref([]);
@@ -757,7 +757,7 @@ export default {
 
 ```vue
 <script>
-import { useMagicProps } from "./MagicProps.ts";
+import { useMagicProps } from "use-magic-props";
 export default {
     setup(){
         const propsDef = ref([]);
@@ -771,7 +771,7 @@ export default {
 
 ```vue
 <script>
-import { useMagicProps } from "./MagicProps.ts";
+import { useMagicProps } from "use-magic-props";
 export default {
     setup(){
         const propsDef = ref([]);
@@ -790,7 +790,7 @@ export default {
 
 ```vue
 <script>
-import { useMagicProps } from "./MagicProps.ts";
+import { useMagicProps } from "use-magic-props";
 export default {
     setup(){
         const propsDef = ref([]);
@@ -830,13 +830,17 @@ layout: intro
 <span class="font-mono text-6xl leading-20">useMagicProps()</span>
 </div>
 
-
-
 ---
-layout: iframe
-url: https://codepen.io/fimion/embed/XWwNjZj?default-tab=js&theme-id=39869
+layout: center
 ---
 
+`npm install use-magic-props`
+
+---
+layout: default
+---
+
+<UseMagicPropsDemo />
 
 ---
 layout: intro
