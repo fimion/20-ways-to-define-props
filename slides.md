@@ -869,3 +869,4 @@ Senior Frontend Developer at Hygiena
 bsky: [@dangitalex.wtf](https://bsky.app/profile/dangitalex.wtf)  
 mastodon: [@fimion@notacult.social](https://notacult.social/@fimion)  
 blog: [Alex.Party](https://alex.party)  
+slides: [`https://github.com/fimion/20-ways-to-define-props`](https://github.com/fimion/20-ways-to-define-props)
